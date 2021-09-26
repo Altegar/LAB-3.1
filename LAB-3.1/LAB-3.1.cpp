@@ -28,7 +28,7 @@ int main()
     if (x >= 1)
         B = cos(x) / (1 + (sin(x) + sin(x)));
 
-    y = A + B;
+    y = A - B;
 
     cout << endl;
     cout << "1) y = " << y << endl;
@@ -42,7 +42,7 @@ int main()
         else
             B = 1 - (sin(x) * sin(x));
 
-    y = A + B;
+    y = A - B;
 
     cout << "2) y = " << y << endl;
     cin.get();
