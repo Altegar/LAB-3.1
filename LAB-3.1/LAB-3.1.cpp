@@ -27,7 +27,7 @@ int main()
     if (-1 < x && x < 1)
         B = 1 - (sin(x) * sin(x));
     if (x >= 1)
-        B = cos(x) / (1 + (sin(x) + sin(x)));
+        B = cos(x) / (1 + (sin(x) * sin(x)));
 
     y = A - B;
 
@@ -39,7 +39,7 @@ int main()
         B = exp(0.4 + x);
     else
         if (x >= 1)
-            B = cos(x) / (1 + (sin(x) + sin(x)));
+            B = cos(x) / (1 + (sin(x) * sin(x)));
         else
             B = 1 - (sin(x) * sin(x));
 
